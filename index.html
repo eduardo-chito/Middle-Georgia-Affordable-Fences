@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Middle Georgia Fence Builders LLC | Professional Fence Installation</title>
+    <meta name="description"
+        content="Professional fence installation in Middle Georgia. Wood privacy fences, chain link, decorative fences, and gates. Free estimates." />
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet" />
+
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container top-bar-inner">
+            <div class="top-bar-left">
+                <span><i class="fa-solid fa-phone"></i> <a href="tel:+14787655730">(478) 765-5730</a></span>
+                <span><i class="fa-solid fa-envelope"></i> <a
+                        href="mailto:middlegeorgiafences@gmail.com">middlegeorgiafences@gmail.com</a></span>
+            </div>
+            <div class="top-bar-right">
+                <span><i class="fa-regular fa-clock"></i> Mon–Sat: 8AM–6PM</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header / Nav -->
+    <header class="site-header">
+        <div class="container header-inner">
+            <div class="logo">
+                <img src="C:\Users\eduar\Documents\Fence Business\Website\Logo\Logo 2.png"
+                    alt="Middle Georgia Affordable Fences Logo" class="logo-img">
+            </div>
+
+
+            <nav class="main-nav">
+                <ul class="nav-links">
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#reviews">Reviews</a></li>
+                    <li><a href="#contact">Free Estimate</a></li>
+                </ul>
+                <button class="nav-cta" onclick="scrollToSection('contact')">Get a Quote</button>
+                <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="container hero-inner">
+            <div class="hero-text">
+                <h1>Professional Fence Installation in Middle Georgia</h1>
+                <p>
+                    Wood privacy, chain link, and decorative fences installed with quality materials, solid
+                    craftsmanship, and honest pricing.
+                </p>
+                <div class="hero-actions">
+                    <button class="btn-primary" onclick="scrollToSection('contact')">
+                        Request a Free Fence Estimate
+                    </button>
+                    <a class="btn-secondary" href="tel:+14785551234">
+                        <i class="fa-solid fa-phone"></i> Call Now
+                    </a>
+                </div>
+                <div class="hero-badges">
+                    <span><i class="fa-solid fa-check"></i> Locally Owned</span>
+                    <span><i class="fa-solid fa-check"></i> Licensed & Insured</span>
+                    <span><i class="fa-solid fa-check"></i> Free Estimates</span>
+                </div>
+            </div>
+
+            <div class="contact-form-card">
+                <h3>Free Estimate Form</h3>
+                <form action="https://formspree.io/f/xgvglkvj" method="POST">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone</label>
+                            <input type="tel" id="phone" name="phone" required />
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" />
+                        </div>
+                        <div class="form-group">
+                            <label for="city">City / Area</label>
+                            <input type="text" id="city" name="city" />
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="fenceType">Type of Fence</label>
+                        <select id="fenceType" name="fenceType">
+                            <option value="">Select an option</option>
+                            <option value="Wood Privacy">Wood Privacy</option>
+                            <option value="Chain Link">Chain Link</option>
+                            <option value="Decorative / Picket">Decorative / Picket</option>
+                            <option value="Gates / Repairs">Gates / Repairs</option>
+                            <option value="Not Sure">Not Sure Yet</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="length">Approximate Fence Length (if known)</label>
+                        <input type="text" id="length" name="length" placeholder="Example: 150 ft" />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Project Details</label>
+                        <textarea id="message" name="message" rows="4"
+                            placeholder="Tell us about your fence project..."></textarea>
+                    </div>
+
+                    <input type="hidden" name="_subject" value="New fence estimate request from hero form">
+
+                    <button type="submit" class="btn-primary full-width">Send My Request</button>
+                </form>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="section section-alt services">
+        <div class="container">
+            <div class="section-header services-header-bubble">
+                <h2 class="bubble-title">Fence Services</h2>
+                <p class="bubble-subtitle">We focus on fence installation and repairs for homeowners and small
+                    businesses in Middle Georgia.</p>
+            </div>
+
+            <div class="services-grid">
+                <a class="service-card">
+                    <div class="service-icon">
+                        <i class="fa-solid fa-house-chimney"></i>
+                        <img src="C:\Users\eduar\Documents\Fence Business\Website\Service Icons\Wood Privacy Fence.png"
+                            alt="Wood privacy fence icon" class="service-icon-img">
+                    </div>
+                    <h3>Wood Privacy Fences</h3>
+                    <p>
+                        Classic 6' and 8' privacy fences built with quality posts and pickets. Dog-ear, picture-frame,
+                        and board-on-board styles available to match your home and yard.
+                    </p>
+                </a>
+
+                <a class="service-card">
+                    <div class="service-icon">
+                        <i class="fa-solid fa-border-all"></i>
+                        <img src="C:\Users\eduar\Documents\Fence Business\Website\Service Icons\Chain Link Fence.png"
+                            alt="Chain link fence icon" class="service-icon-img">
+                    </div>
+                    <h3>Chain Link Fences</h3>
+                    <p>
+                        Durable and cost-effective fencing for pets, side yards, and commercial areas. Galvanized or
+                        black vinyl-coated chain link with walk-through and drive gates.
+                    </p>
+                </a>
+
+                <a class="service-card">
+                    <div class="service-icon">
+                        <i class="fa-solid fa-border-style"></i>
+                        <img src="C:\Users\eduar\Documents\Fence Business\Website\Service Icons\Vinyl Fences.png"
+                            alt="Vinyl fence icon" class="service-icon-img">
+                    </div>
+                    <h3>Vinyl Fences</h3>
+                    <p>
+                        Low-maintenance and long-lasting vinyl fences available in white, tan, and other modern styles.
+                        Great for clean appearance, privacy, and durability with no painting required.
+                    </p>
+                </a>
+
+                <a class="service-card">
+                    <div class="service-icon">
+                        <i class="fa-solid fa-door-open"></i>
+                        <img src="C:\Users\eduar\Documents\Fence Business\Website\Service Icons\Gates & Fence Repairs.png"
+                            alt="Gates and fence repairs icon" class="service-icon-img">
+                    </div>
+                    <h3>Gates & Fence Repairs</h3>
+                    <p>
+                        Custom single and double-drive gates, plus repairs for leaning posts, warped pickets, and storm
+                        damage to keep your existing fence safe and functional.
+                    </p>
+                </a>
+
+                <a class="service-card">
+                    <div class="service-icon">
+                        <i class="fa-solid fa-paint-roller"></i>
+                        <img src="C:\Users\eduar\Documents\Fence Business\Website\Service Icons\Fence Painting.png"
+                            alt="Fence painting icon" class="service-icon-img">
+                    </div>
+                    <h3>Fence Painting</h3>
+                    <p>
+                        Professional fence painting and staining to protect your wood fence from weather damage and
+                        bring new life to old or faded panels.
+                    </p>
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container about-grid">
+            <div class="about-text">
+                <h2>About Middle Georgia Affordable Fences</h2>
+                <p>
+                    Middle Georgia Affordable Fences LLC is a locally owned, family-operated fence company serving
+                    homeowners and small businesses across
+                    Middle Georgia. We are owned and operated by myself (Eduardo Osuna) and my stepdad (Oscar
+                    Hernandez). We believe a fence should be
+                    straight, sturdy, and built to last — not something you have to worry about repairing a year later.
+                </p>
+                <p>
+                    From the first measurement to the final walkthrough, we focus on clear communication, clean work,
+                    and respectful treatment of your property.
+                    Our goal is simple: install a fence you’re proud to show off.
+                </p>
+
+                <ul class="about-list">
+                    <li><i class="fa-solid fa-check"></i> Honest, upfront pricing</li>
+                    <li><i class="fa-solid fa-check"></i> Quality materials and hardware</li>
+                    <li><i class="fa-solid fa-check"></i> Professional installation & cleanup</li>
+                    <li><i class="fa-solid fa-check"></i> Local service across Middle Georgia</li>
+                </ul>
+
+                <button class="btn-primary" onclick="scrollToSection('contact')">
+                    Schedule My Free Fence Estimate
+                </button>
+            </div>
+
+            <div class="about-card">
+                <div class="about-tag">Local • Licensed • Insured</div>
+                <h3>Service Area</h3>
+                <p>We install fences across Middle Georgia, including:</p>
+                <div class="about-columns">
+                    <ul>
+                        <li>Macon, GA</li>
+                        <li>Warner Robins, GA</li>
+                        <li>Centerville, GA</li>
+                        <li>Byron, GA</li>
+                    </ul>
+                    <ul>
+                        <li>Perry, GA</li>
+                        <li>Gray, GA</li>
+                        <li>Forsyth, GA</li>
+                        <li>And surrounding areas</li>
+                    </ul>
+                </div>
+                <p class="about-footer">
+                    Not sure if you’re in our service area? <br />
+                    <strong>Call <a href="tel:+14787655730">(478) 765-5730</a></strong> and ask.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="section section-alt">
+        <div class="container">
+            <div class="section-header">
+                <h2>Fence Project Gallery</h2>
+                <p>Here’s a preview of the types of fences we build.</p>
+            </div>
+
+            <div class="gallery-carousel">
+                <button class="gallery-arrow prev" aria-label="Previous photo">&#10094;</button>
+
+                <div class="gallery-track">
+                    <div class="gallery-slide active">
+                        <img src="C:\Users\eduar\Documents\Fence Business\Website\Gallery\Used Photos\20251116_150616.jpg"
+                            alt="Wood privacy fence project">
+                    </div>
+                    <div class="gallery-slide">
+                        <img src="C:\Users\eduar\Documents\Fence Business\Website\Gallery\Used Photos\20251130_151418.jpg"
+                            alt="Chain link fence project">
+                    </div>
+                    <div class="gallery-slide">
+                        <img src="C:\Users\eduar\Documents\Fence Business\Website\Gallery\Used Photos\20251130_151454.jpg"
+                            alt="Decorative fence project">
+                    </div>
+                    <div class="gallery-slide">
+                        <img src="C:\Users\eduar\Documents\Fence Business\Website\Gallery\Used Photos\chain_resized_to_gate.jpg"
+                            alt="Gate installation project">
+                    </div>
+                    <div class="gallery-slide">
+                        <img src="C:\Users\eduar\Documents\Fence Business\Website\Gallery\Used Photos\vinyl_resized_to_gate.jpg"
+                            alt="Gate installation project">
+                    </div>
+                    <div class="gallery-slide">
+                        <img src="C:\Users\eduar\Documents\Fence Business\Website\Gallery\Used Photos\20251130_151619.jpg"
+                            alt="Gate installation project">
+                    </div>
+                    <div class="gallery-slide">
+                        <img src="C:\Users\eduar\Documents\Fence Business\Website\Gallery\Used Photos\20251130_151724.jpg"
+                            alt="Gate installation project">
+                    </div>
+                    <div class="gallery-slide">
+                        <img src="C:\Users\eduar\Documents\Fence Business\Website\Gallery\Used Photos\20251130_151548.jpg"
+                            alt="Gate installation project">
+                    </div>
+                    <div class="gallery-slide">
+                        <img src="C:\Users\eduar\Documents\Fence Business\Website\Gallery\Used Photos\Gate.jpg"
+                            alt="Gate installation project">
+                    </div>
+                </div>
+
+                <button class="gallery-arrow next" aria-label="Next photo">&#10095;</button>
+            </div>
+
+            <div class="gallery-dots">
+                <button class="dot active" data-slide="0"></button>
+                <button class="dot" data-slide="1"></button>
+                <button class="dot" data-slide="2"></button>
+                <button class="dot" data-slide="3"></button>
+                <button class="dot" data-slide="4"></button>
+                <button class="dot" data-slide="5"></button>
+                <button class="dot" data-slide="6"></button>
+                <button class="dot" data-slide="7"></button>
+                <button class="dot" data-slide="8"></button>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Reviews Section -->
+    <section id="reviews" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>What Our Customers Say</h2>
+                <p>Once you have Google or Facebook reviews, you can show them here.</p>
+            </div>
+
+            <div class="reviews-grid">
+                <article class="review-card">
+                    <div class="review-stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p>
+                        “He did an amazing job with our picture frame fence. The gates have no sag. I can even hang on
+                        the gate and it still wont sag.”
+                    </p>
+                    <h4>– Jackie</h4>
+                </article>
+
+                <article class="review-card">
+                    <div class="review-stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p>
+                        “They helped us choose the right style for our yard and pets. Great communication and fair
+                        pricing.
+                        We’ll definitely call them again.”
+                    </p>
+                    <h4>– Local Customer</h4>
+                </article>
+
+                <article class="review-card">
+                    <div class="review-stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p>
+                        “Fence went up quickly and the lines are perfectly straight.
+                        You can tell they take pride in their work.”
+                    </p>
+                    <h4>– Small Business Owner</h4>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact / Estimate Section -->
+    <section id="contact" class="section section-accent">
+        <div class="container contact-grid">
+            <div class="contact-text">
+                <h2>Request Your Free Fence Estimate</h2>
+                <p>
+                    Tell us a little about your project and we’ll reach out to schedule a visit and provide a detailed
+                    quote.
+                </p>
+
+                <ul class="contact-list">
+                    <li><i class="fa-solid fa-phone"></i> <a href="tel:+14787655730">(478) 765-5730</a></li>
+                    <li><i class="fa-solid fa-envelope"></i> <a
+                            href="mailto:middlegeorgiafences@gmail.com">middlegeorgiafences@gmail.com</a></li>
+                    <li><i class="fa-solid fa-location-dot"></i> Middle Georgia & surrounding areas</li>
+                </ul>
+
+                <p class="contact-note">
+                    Hours: <strong>Mon–Sat: 8AM–6PM</strong> &nbsp;•&nbsp; Closed Sunday
+                </p>
+            </div>
+
+            <div class="contact-form-card">
+                <h3>Free Estimate Form</h3>
+                <form action="https://formspree.io/f/xgvglkvj" method="POST">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone</label>
+                            <input type="tel" id="phone" name="phone" required />
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" />
+                        </div>
+                        <div class="form-group">
+                            <label for="city">City / Area</label>
+                            <input type="text" id="city" name="city" />
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="fenceType">Type of Fence</label>
+                        <select id="fenceType" name="fenceType">
+                            <option value="">Select an option</option>
+                            <option value="Wood Privacy">Wood Privacy</option>
+                            <option value="Chain Link">Chain Link</option>
+                            <option value="Decorative / Picket">Decorative / Picket</option>
+                            <option value="Gates / Repairs">Gates / Repairs</option>
+                            <option value="Not Sure">Not Sure Yet</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="length">Approximate Fence Length (if known)</label>
+                        <input type="text" id="length" name="length" placeholder="Example: 150 ft" />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Project Details</label>
+                        <textarea id="message" name="message" rows="4"
+                            placeholder="Tell us about your fence project..."></textarea>
+                    </div>
+
+                    <input type="hidden" name="_subject" value="New fence estimate request from hero form">
+
+                    <button type="submit" class="btn-primary full-width">Send My Request</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <div class="footer-left">
+                <h4>Middle Georgia Fence Builders LLC</h4>
+                <p>Professional fence installation across Middle Georgia.</p>
+            </div>
+            <div class="footer-middle">
+                <ul class="footer-links">
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#contact">Free Estimate</a></li>
+                </ul>
+            </div>
+            <div class="footer-right">
+                <p><i class="fa-regular fa-copyright"></i> <span id="year"></span> Middle Georgia Fence Builders LLC</p>
+                <p>All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Main JS -->
+    <script src="script.js"></script>
+</body>
+
+</html>
